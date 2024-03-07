@@ -1,0 +1,6 @@
+../Peripheral/Core/Gpio.c:9:6:Gpio_Led_Init	1
+../Peripheral/Core/Gpio.c:26:6:Gpio_Led_Write	2
+../Peripheral/Core/Gpio.c:38:6:Gpio_Led2_Write	2
+../Peripheral/Core/Gpio.c:50:6:Gpio_Led3_Write	2
+../Peripheral/Core/Gpio.c:68:6:Gpio_But_Init	1
+../Peripheral/Core/Gpio.c:83:12:Gpio_But_Read	1
