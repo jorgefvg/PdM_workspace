@@ -1,21 +1,14 @@
-12:50:53 **** Incremental Build of configuration Debug for project Practica2 ****
+12:11:52 **** Incremental Build of configuration Debug for project Practica3 ****
 make -j2 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Practica2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/jv/STM32CubeIDE/workspace_1.14.0/PdM_workspace/PdM_workspace/Practica2/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Practica2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Practica2.elf
- 
-arm-none-eabi-size  Practica2.elf 
-arm-none-eabi-objdump -h -S Practica2.elf  > "Practica2.list"
+arm-none-eabi-size  Practica3.elf 
    text	   data	    bss	    dec	    hex	filename
-   7856	     20	   1652	   9528	   2538	Practica2.elf
+   8244	     40	   1656	   9940	   26d4	Practica3.elf
 Finished building: default.size.stdout
  
-Finished building: Practica2.list
- 
-12:51:01 **** Incremental Build of configuration Debug for project Practica2 ****
+12:12:29 **** Incremental Build of configuration Debug for project Practica3 ****
 make -j2 all 
-arm-none-eabi-size  Practica2.elf 
+arm-none-eabi-size  Practica3.elf 
    text	   data	    bss	    dec	    hex	filename
-   7856	     20	   1652	   9528	   2538	Practica2.elf
+   8244	     40	   1656	   9940	   26d4	Practica3.elf
 Finished building: default.size.stdout
  
