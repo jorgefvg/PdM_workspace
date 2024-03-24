@@ -80,12 +80,14 @@ void Toggle_LED_Sequence(uint8_t sequenceIndex)
 	for (int i = 0; i < 3; i++) {
 		uint8_t led = sequence[i];
 		HAL_GPIO_WritePin(LD_GPIO_Port[led - 1], LD_Pin[led - 1], GPIO_PIN_SET);
-		delayWrite(&ledDelay, LED_TIME); // Iniciar el retardo no bloqueante para mantener el LED encendido durante 200 ms
+		// Iniciar el retardo no bloqueante para mantener el LED encendido durante 200 ms
+		delayWrite(&ledDelay, LED_TIME);
 		while (!delayRead(&ledDelay)) {
 			// Esperar hasta que el retardo no bloqueante haya finalizado
 		}
 		HAL_GPIO_WritePin(LD_GPIO_Port[led - 1], LD_Pin[led - 1], GPIO_PIN_RESET);
-		delayWrite(&ledDelay, LED_TIME); // Iniciar el retardo no bloqueante para mantener el LED apagado durante 200 ms
+		// Iniciar el retardo no bloqueante para mantener el LED apagado durante 200 ms
+		delayWrite(&ledDelay, LED_TIME);
 		while (!delayRead(&ledDelay)) {
 			// Esperar hasta que el retardo no bloqueante haya finalizado
 		}

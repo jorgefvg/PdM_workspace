@@ -18,7 +18,7 @@ UART_HandleTypeDef huart2;
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
-
+void Error_Handler(void);
 /**
   * @brief  Punto de entrada de la aplicación.
   * @retval int
@@ -54,6 +54,10 @@ int main(void)
   */
 
 void delayInit(delay_t* delay, tick_t duration) {
+	if (delay == NULL || duration <= 0 ){
+			Error_Handler();
+		}
+
    delay->duration = duration;
    delay->running = false;  //Inicializa el flag running en false
 }
@@ -89,6 +93,10 @@ bool_t delayRead(delay_t* delay) {
   */
 
 void delayWrite(delay_t* delay, tick_t duration) {
+	if (delay == NULL || duration <= 0 ){
+			Error_Handler();
+		}
+
    delay->duration = duration;
 }
 
