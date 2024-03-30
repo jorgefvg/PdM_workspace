@@ -8,8 +8,8 @@
 /* Inclusiones privadas -------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 /* Variables privadas ---------------------------------------------------------*/
-delay_t ledDelay;                   // Retardo no bloqueante para los LEDs
-debounceState_t state;              // Estado actual de la MEF Anti-Rebote
+static delay_t ledDelay;                   // Retardo no bloqueante para los LEDs
+static debounceState_t state;              // Estado actual de la MEF Anti-Rebote
 UART_HandleTypeDef huart2;          // Handler de UART para comunicación serial (si es necesario)
 
 /* Prototipos de funciones privadas -----------------------------------------------*/
