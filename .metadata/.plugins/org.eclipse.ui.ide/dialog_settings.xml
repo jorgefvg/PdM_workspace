@@ -17,7 +17,11 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/jv/STM32CubeIDE/workspace_1.14.0/PdM_workspace/PdM_workspace/Proyecto_Final_PDM_PCSE"/>
+			<item value="/home/jv/STM32CubeIDE/workspace_1.14.0/PdM_workspace"/>
 			<item value="/home/jv/STM32CubeIDE/workspace_1.14.0/PdM_workspace/PdM_workspace"/>
 		</list>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 </section>

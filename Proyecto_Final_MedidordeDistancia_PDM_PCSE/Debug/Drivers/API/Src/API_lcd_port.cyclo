@@ -1,0 +1,2 @@
+../Drivers/API/Src/API_lcd_port.c:28:6:I2C_transmitir_cmd	2
+../Drivers/API/Src/API_lcd_port.c:46:6:I2C_transmitir_data	2
