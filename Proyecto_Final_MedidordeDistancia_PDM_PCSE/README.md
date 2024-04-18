@@ -6,7 +6,8 @@
 Cada vez que el sensor ultrasónico HC-SR04 realiza el cálculo de la distancia de un objeto se debe mostrar el valor de la distancia en cm a través de la UART y por medio de una pantalla LCD 16x2 utilizando el protocolo I2C.
 
 ### Perifericos
-![image](https://github.com/jorgefvg/PdM_workspace/assets/161152623/4d7154a7-a182-4ff5-9b29-032cc4d96de9)
+![image](https://github.com/jorgefvg/PdM_workspace/assets/161152623/5e658e90-fecf-4f10-80d3-5afeacf16ccd)
+
 
 - GPIO: Para el manejo de los leds.
 - I2C: Para el manejo de la comunicación con la pantalla LCD16X2.
